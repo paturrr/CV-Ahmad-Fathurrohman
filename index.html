@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Ahmad Fathurrohman</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+        }
+
+        .header {
+            background: #000;
+            padding: 50px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .header img {
+            margin-right: 20px;
+        }
+
+        .header-text {
+            text-align: left;
+        }
+
+        .about,
+        .skills,
+        .experience,
+        .contact {
+            background: #111;
+            padding: 40px;
+            margin: 20px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #000;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: #0ff;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: rgb(255, 255, 255);
+        }
+
+        #profile,
+        #skills,
+        #experience,
+        #contact {
+            scroll-margin-top: 65px;
+        }
+
+        .neon-line {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #0ff;
+            box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+        }
+
+        .header::before,
+        .header::after,
+        .about::before,
+        .about::after,
+        .skills::before,
+        .skills::after,
+        .experience::before,
+        .experience::after,
+        .contact::before,
+        .contact::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #0ff;
+            box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+        }
+
+        .header::before,
+        .about::before,
+        .skills::before,
+        .experience::before,
+        .contact::before {
+            top: 0;
+            left: 0;
+        }
+
+        .header::after,
+        .about::after,
+        .skills::after,
+        .experience::after,
+        .contact::after {
+            bottom: 0;
+            left: 0;
+        }
+
+        .skills .ring text {
+            fill: #007bff;
+        }
+
+        .contact svg {
+            fill: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Fathur</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="header" style="height: 100vh; justify-content: center;">
+        <div class="header-text" style="text-align: center;">
+            <h2 style="font-size: 5rem;">Hallo, Saya</h2>
+            <h1 style="font-size: 7rem;">AHMAD FATHURROHMAN</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="about" id="profile" style="height: 90vh;">
+            <h2 class="fs-2 fw-bold mb-4 text-center">About Me</h2>
+            <div style="display: flex; align-items: center;">
+                <img src="img/poto patur.jpg" width="200px" alt="Profile Picture" style="margin-right: 20px;">
+                <div>
+                    <p><strong>Nama: </strong> Ahmad Fathurrohman</p>
+                    <p><strong>Profile: </strong> Mahasiswa Telkom University</p>
+                    <p><strong>Email: </strong>ahmad.fathurrohman26@gmail.com</p>
+                    <p><strong>Nomor: </strong>081990180197</p>
+                </div>
+            </div>
+            <br><br><br>
+            <p>Halo! Saya adalah mahasiswa Sistem Informasi di Telkom University dengan latar belakang pendidikan dari
+                SMK Telkom. Sejak di bangku sekolah, saya telah memiliki dasar pemrograman yang kuat dan terus mengasah
+                keterampilan di berbagai teknologi.</p>
+            <p>Saya memiliki minat dalam desain UI/UX dan sering menggunakan Figma untuk merancang tampilan antarmuka
+                yang menarik dan fungsional. Selain itu, saya juga tertarik dengan dunia pemrograman dan memiliki
+                pengalaman dalam HTML, Python, Java, JavaScript, serta PHP.</p>
+            <p>Bagi saya, teknologi bukan hanya sekadar alat, tetapi juga sarana untuk menciptakan solusi inovatif. Oleh
+                karena itu, saya memilih jurusan Sistem Informasi agar dapat mengembangkan keterampilan di bidang
+                teknologi dan bisnis secara seimbang.</p>
+            <p>Saya selalu terbuka untuk belajar hal baru dan siap menghadapi tantangan dalam dunia IT.</p>
+        </div>
+
+        <div class="skills" id="skills" style="height: 80vh;">
+            <h2 class="fs-2 fw-bold mb-4 text-center">Skills</h2>
+            <div class="text-center mb-4">
+                <br>
+                <h3 class="fs-4 fw-bold">Coding</h3>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center gap-4 mb-4">
+                <div class="text-center mb-4">
+                    <div class="ring" data-percentage="75">
+                        <svg width="150" height="150">
+                            <circle cx="75" cy="75" r="70" stroke="#e0e0e0" stroke-width="10" fill="none" />
+                            <circle cx="75" cy="75" r="70" stroke="#007bff" stroke-width="10" fill="none"
+                                stroke-dasharray="439.6" stroke-dashoffset="109.9" />
+                            <text x="50%" y="50%" text-anchor="middle" dy=".3em"
+                                class="fs-2 fw-bold text-primary">75%</text>
+                        </svg>
+                    </div>
+                    <p class="mt-2 fs-4 fw-bold text-primary">HTML</p>
+                </div>
+                <div class="text-center mb-4">
+                    <div class="ring" data-percentage="60">
+                        <svg width="150" height="150">
+                            <circle cx="75" cy="75" r="70" stroke="#e0e0e0" stroke-width="10" fill="none" />
+                            <circle cx="75" cy="75" r="70" stroke="#007bff" stroke-width="10" fill="none"
+                                stroke-dasharray="439.6" stroke-dashoffset="175.84" />
+                            <text x="50%" y="50%" text-anchor="middle" dy=".3em"
+                                class="fs-2 fw-bold text-primary">60%</text>
+                        </svg>
+                    </div>
+                    <p class="mt-2 fs-4 fw-bold text-primary">CSS</p>
+                </div>
+                <div class="text-center mb-4">
+                    <div class="ring" data-percentage="85">
+                        <svg width="150" height="150">
+                            <circle cx="75" cy="75" r="70" stroke="#e0e0e0" stroke-width="10" fill="none" />
+                            <circle cx="75" cy="75" r="70" stroke="#007bff" stroke-width="10" fill="none"
+                                stroke-dasharray="439.6" stroke-dashoffset="65.94" />
+                            <text x="50%" y="50%" text-anchor="middle" dy=".3em"
+                                class="fs-2 fw-bold text-primary">85%</text>
+                        </svg>
+                    </div>
+                    <p class="mt-2 fs-4 fw-bold text-primary">JAVA</p>
+                </div>
+                <div class="text-center mb-4">
+                    <div class="ring" data-percentage="70">
+                        <svg width="150" height="150">
+                            <circle cx="75" cy="75" r="70" stroke="#e0e0e0" stroke-width="10" fill="none" />
+                            <circle cx="75" cy="75" r="70" stroke="#007bff" stroke-width="10" fill="none"
+                                stroke-dasharray="439.6" stroke-dashoffset="131.88" />
+                            <text x="50%" y="50%" text-anchor="middle" dy=".3em"
+                                class="fs-2 fw-bold text-primary">70%</text>
+                        </svg>
+                    </div>
+                    <p class="mt-2 fs-4 fw-bold text-primary">JS</p>
+                </div>
+                <div class="text-center mb-4">
+                    <div class="ring" data-percentage="80">
+                        <svg width="150" height="150">
+                            <circle cx="75" cy="75" r="70" stroke="#e0e0e0" stroke-width="10" fill="none" />
+                            <circle cx="75" cy="75" r="70" stroke="#007bff" stroke-width="10" fill="none"
+                                stroke-dasharray="439.6" stroke-dashoffset="87.92" />
+                            <text x="50%" y="50%" text-anchor="middle" dy=".3em"
+                                class="fs-2 fw-bold text-primary">80%</text>
+                        </svg>
+                    </div>
+                    <p class="mt-2 fs-4 fw-bold text-primary">PHP</p>
+                </div>
+            </div>
+            <div class="text-center mb-4">
+                <h3 class="fs-4 fw-bold">Design</h3>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center gap-4">
+                <div class="text-center mb-4">
+                    <div class="ring" data-percentage="90">
+                        <svg width="150" height="150">
+                            <circle cx="75" cy="75" r="70" stroke="#e0e0e0" stroke-width="10" fill="none" />
+                            <circle cx="75" cy="75" r="70" stroke="#007bff" stroke-width="10" fill="none"
+                                stroke-dasharray="439.6" stroke-dashoffset="43.96" />
+                            <text x="50%" y="50%" text-anchor="middle" dy=".3em"
+                                class="fs-2 fw-bold text-primary">90%</text>
+                        </svg>
+                    </div>
+                    <p class="mt-2 fs-4 fw-bold text-primary">FIGMA</p>
+                </div>
+                <div class="text-center mb-4">
+                    <div class="ring" data-percentage="85">
+                        <svg width="150" height="150">
+                            <circle cx="75" cy="75" r="70" stroke="#e0e0e0" stroke-width="10" fill="none" />
+                            <circle cx="75" cy="75" r="70" stroke="#007bff" stroke-width="10" fill="none"
+                                stroke-dasharray="439.6" stroke-dashoffset="65.94" />
+                            <text x="50%" y="50%" text-anchor="middle" dy=".3em"
+                                class="fs-2 fw-bold text-primary">85%</text>
+                        </svg>
+                    </div>
+                    <p class="mt-2 fs-4 fw-bold text-primary">CANVA</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="experience" id="experience">
+            <h3 class="hs-4 fw-bold text-center">Experience</h3>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/aaa.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Anggota Osis SMPN 191 Jakarta (2017-2018) - dilanjutkan MPK</h5>
+                            <p>Menjadi bagian dari OSIS SMPN 191 Jakarta Barat yang merupakan suatu tantangan awal mula
+                                untuk kedepannya.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/555.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Figma</h5>
+                            <p>Memiliki pengalaman yang terbilang Advance didalam bidang design UI/UX menggunakan
+                                aplikasi Figma.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/ccc.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Ketua Kelas 9H SMPN 191 Jakarta (2019-2020)</h5>
+                            <p>Berpengalaman menjadi ketua kelas yang handal dalam menangangi segala permasalahan yang
+                                ada di kelas, dan dapat melaksanakan tugas nya dengan sangat baik.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/444.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Anggota OSIS SMK Telkom Jakarta (2021-2022)</h5>
+                            <p>Berpengalaman di bidang Organisasi Siswa di SMK Telkom Jakarta, menjadikan suatu
+                                pembelajaran yang sangat berguna dimasa mendatang.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <h3>Contact</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Nama">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Pesan"></textarea>
+                        </div>
+                        <button class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h5>Hubungi Saya</h5>
+                    <p>Silahkan hubungi saya dengan nomor kontak dan email yang tertera di bawah, dan kalian juga dapat
+                        mengirimkan pesan langsung ke saya dengan mengisi form di sebelah. Terima Kasih</p>
+                    <div class="d-flex align-items-center">
+                        <br>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                        <span>ahmd_fathur</span><br>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z" />
+                        </svg>
+                        <span>ahmad.fathurrohman26@gmail.com</span><br>
+                    </div>
+                    <div class="d-flex align-items-center"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                    </svg>
+                    <span>081990180197</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
